@@ -1,0 +1,26 @@
+.page {
+    margin-top: 1rem;
+    padding: 5rem 0;
+    width: 100% !important;
+}
+
+.page p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.page-header {
+    background: linear-gradient(to bottom, transparent, #F9FAFA);
+}
+
+.paper1 {
+    width: 100%;
+}
+
+.papercol {
+    background-image: url(../../assets/paper1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 150px !important;
+}

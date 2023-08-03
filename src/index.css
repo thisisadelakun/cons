@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --color1: #00ADF1;
+  --color2: #f9faf9;
+  --color3: #0D1117;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.8em !important;
+  line-height: 1.6;
+  margin: 2rem auto !important;
+  overflow-y: hidden;
+  width: 100%;
+  text-align: left;
+  font-weight: bolder !important;
+  text-align: center;
+  font-family: 'Quintessential', cursive !important;
+}
+
+a {
+  font-weight: 500;
+  color: #00ADF1;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #646cff;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #00ADF1;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+.containers {
+  width: 90%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .containers {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .containers {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quintessential', cursive;
+font-family: 'Vast Shadow', cursive;
+font-family: 'Yellowtail', cursive; */

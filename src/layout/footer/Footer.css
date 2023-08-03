@@ -1,0 +1,17 @@
+.footer{
+    background-color: var(--color3);
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+
+.copyright span{
+    color: var(--color2);
+    font-size: 18px;
+    font-family: 'Dongle', sans-serif;
+}

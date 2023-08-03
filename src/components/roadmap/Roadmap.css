@@ -1,0 +1,17 @@
+.custom-chrono h1 {
+    font-size: 16px !important;
+}
+
+.roadmaph2 {
+    font-family: 'Quintessential', cursive;
+    overflow-y: hidden;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 3rem;
+    color: var(--color1);
+}
+
+.chrono-event {
+    background-color: #f0f0f0; /* Replace with your desired background color */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Adjust the shadow as needed */
+  }

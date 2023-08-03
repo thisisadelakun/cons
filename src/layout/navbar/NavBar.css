@@ -1,0 +1,139 @@
+.nav-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    font-family: 'Yellowtail', cursive;
+}
+
+.offcanvasbgr,
+.show-background {
+    background-color: #F9FAFA;
+}
+
+.nav-container {
+    color: #1a1a1a;
+}
+
+.nav-link {
+    color: #949292;
+}
+
+.custom-close-button {
+    color: #000;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+}
+
+button .custom-close-button {
+    border: none;
+
+}
+
+button .custom-close-button:hover {
+    background: none !important;
+}
+
+.mb-2 {
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.flex-grow-1 {
+    margin-top: 0.7rem;
+    text-align: center;
+    display: flex;
+}
+
+.title-logo {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.title-logo img {
+    width: 43px;
+    height: 41px;
+    border: 2PX solid #01AEF2;
+    padding: 2px;
+}
+
+.red_logo {
+    position: relative;
+    left: -18px;
+    top: 10px;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Quintessential', cursive;
+    font-weight: 500;
+    position: relative;
+    text-transform: lowercase;
+}
+
+.nav-item-border::before,
+.nav-item-border::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #808080;
+    transition: width 0.3s ease;
+}
+
+.nav-item-border::before {
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.nav-item-border::after {
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.nav-item-border:hover::before {
+    width: 100%;
+    transform: scaleX(0);
+}
+
+.nav-item-border:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.nav-link-socios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.nav-link-socios a:hover {
+    transform: scaleX(1.2);
+}
+
+@media only screen and (max-width: 576px) {
+    .flex-grow-1 {
+        width: 80%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .nav-link {
+        color: #949292;
+    }
+}
