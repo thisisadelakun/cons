@@ -1,16 +1,28 @@
 .page {
     margin-top: 1rem;
-    padding: 5rem 0;
+    padding-top: 5rem;
     width: 100% !important;
-}
-
-.page p {
-    text-align: center;
-    font-size: 14px;
+    color: var(--color2);
+    background: radial-gradient(circle, #252525 10%, transparent 11%), radial-gradient(circle at bottom left,
+            #252525 5%, transparent 6%), radial-gradient(circle at bottom right, #252525 5%, transparent 6%),
+        radial-gradient(circle at top left, #252525 5%, transparent 6%), radial-gradient(circle at top right, #252525 5%, transparent 6%);
+    background-size: 1em 1em;
+    opacity: 1
 }
 
 .page-header {
-    background: linear-gradient(to bottom, transparent, #F9FAFA);
+    padding-bottom: 0rem;
+}
+
+.page-header p {
+    text-align: center;
+    font-size: 21px;
+    color: var(--color21);
+    font-family: 'Dongle', sans-serif;
+}
+
+.headerspan {
+    color: var(--color1) !important;
 }
 
 .paper1 {
@@ -18,9 +30,10 @@
 }
 
 .papercol {
-    background-image: url(../../assets/paper1.png);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='9999' height='780' preserveAspectRatio='none' viewBox='0 0 9999 780'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1088%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c676 C 181.8%2c614 545.4%2c413.2 909%2c366 C 1272.6%2c318.8 1454.4%2c473.2 1818%2c440 C 2181.6%2c406.8 2363.4%2c187.2 2727%2c200 C 3090.6%2c212.8 3272.4%2c467 3636%2c504 C 3999.6%2c541 4181.4%2c372.4 4545%2c385 C 4908.6%2c397.6 5090.4%2c607.4 5454%2c567 C 5817.6%2c526.6 5999.4%2c155.4 6363%2c183 C 6726.6%2c210.6 6908.4%2c699 7272%2c705 C 7635.6%2c711 7817.4%2c268.8 8181%2c213 C 8544.6%2c157.2 8726.4%2c438.4 9090%2c426 C 9453.6%2c413.6 9817.2%2c206 9999%2c151L9999 780L0 780z' fill='rgba(13%2c 17%2c 23%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1088'%3e%3crect width='9999' height='780' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
+    background-color: transparent;
     height: 150px !important;
 }

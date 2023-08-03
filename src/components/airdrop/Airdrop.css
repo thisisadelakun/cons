@@ -1,0 +1,220 @@
+.airdrop {
+    padding: 5rem 0;
+}
+
+.hello h2 {
+    font-family: 'Quintessential', cursive;
+    overflow-y: hidden;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 3rem;
+    color: var(--color1);
+}
+
+.hello small {
+    font-family: 'Dongle', sans-serif;
+    font-size: 28px;
+    color: var(--color2);
+}
+
+.hello-btn {
+    display: flex;
+    flex-direction: row !important;
+    gap: 3rem;
+    margin: 2rem auto;
+}
+
+.cta {
+    position: relative;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: var(--color1);
+    width: 30px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Dongle", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+    top: -30% !important;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+    top: -30% !important;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7 !important;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.hello-btn button:nth-child(2):hover {
+    background: transparent;
+}
+
+.ctq,
+.hello-btn button:nth-child(1) {
+    padding: 2px 15px;
+    height: 100%;
+    font-family: "Dongle", sans-serif !important;
+    font-size: 25px;
+    border-radius: 50px;
+}
+
+.tokenomics-col p {
+    font-size: 32px !important;
+    font-family: 'Dongle', sans-serif !important;
+    border: 1px solid var(--color1);
+    padding: 2px 15px;
+    border-radius: 25px;
+    width: fit-content;
+    margin-top: 1rem !important;
+}
+
+.progressbar-col {
+    margin: 1.5rem auto;
+}
+
+.progress-text {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.progress-text p {
+    font-size: 28px !important;
+    font-family: 'Dongle', sans-serif !important;
+    border: none;
+    padding: 0;
+}
+
+.progress-text small {
+    font-size: 25px !important;
+    font-family: 'Dongle', sans-serif !important;
+}
+
+.airdropmain {
+    margin: 5rem auto !important;
+}
+
+.airdrop-top {
+    font-family: 'Dongle', sans-serif !important;
+}
+
+.airdrop-top h3 {
+    overflow-y: hidden;
+    font-size: 52px;
+}
+
+.airdrop-top p {
+    font-size: 21px;
+}
+
+.airdrop-bottom {
+    background: #000;
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 5px rgb(12, 12, 12), 5px 5px 5px rgb(22, 21, 21) !important;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+    backface-visibility: hidden;
+}
+
+.ard-btm-col {
+    width: 100%;
+    font-family: 'Dongle', sans-serif !important;
+    font-size: 25px;
+}
+
+.contract-address-col {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contract-address-col button {
+    width: 100%;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+
+.contract-address-col p {
+    background-color: #FCC69C;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Dongle', sans-serif !important;
+    color: var(--color3);
+}
+
+.ard-btm {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+
+.airdrop-left {
+    display: flex;
+    width: 100%;
+}
+
+.airdrop-right {
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+}
+
+
+@media only screen and (min-width:768px) {
+    .airdropmain {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: start;
+
+    }
+
+    .hello h2 {
+        font-size: 36px;
+    }
+
+}

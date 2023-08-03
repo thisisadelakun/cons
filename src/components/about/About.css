@@ -4,13 +4,13 @@
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, #F9FAFA, #FFF);
+    background-color: var(--color3) !important;
 }
 
 .about-profile-img {
     display: flex;
     place-content: center;
-    /* background-color: var(--color3); */
+
 }
 
 .about h2 {
@@ -32,10 +32,27 @@
 }
 
 .about-profile-txt p {
-    width: 80%;
-    margin: 3rem auto;
+    width: 90%;
+    margin: 2rem 3rem;
     font-family: 'Dongle', sans-serif;
     font-size: 21px !important;
+    /* background-color: var(--color2); */
+    color: var(--color2);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    box-shadow: 15px 15px 15px rgb(12, 12, 12), -15px -15px 15px rgb(22, 21, 21);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='220' height='160' preserveAspectRatio='none' viewBox='0 0 320 260'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1044%26quot%3b)' fill='none'%3e%3cpath d='M160 260.79C194.3 261.98 227.98 246.4 250.46 220.46 271.65 196.02 273.89 162.34 273.37 130 272.84 98.39 268.5 66.13 247.52 42.48 225.36 17.51 193.31 0.35 160 2.29 128.01 4.14 103.75 28.49 82.1 52.1 61.66 74.36 44.02 99.79 42.81 130 41.55 161.35 54.66 191.03 75.61 214.39 97.87 239.25 126.65 259.62 160 260.79' fill='rgba(0%2c 173%2c 241%2c 0.14)'%3e%3c/path%3e%3cpath d='M160 189.45C175.59 189.99 190.9 182.91 201.12 171.12 210.75 160.01 211.77 144.7 211.53 130 211.29 115.63 209.32 100.97 199.78 90.22 189.71 78.87 175.14 71.07 160 71.95 145.46 72.79 134.43 83.86 124.59 94.59 115.3 104.71 107.28 116.27 106.73 130 106.16 144.25 112.12 157.74 121.64 168.36 131.76 179.66 144.84 188.92 160 189.45' fill='rgba(0%2c 173%2c 241%2c 0.18)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1044'%3e%3crect width='320' height='260' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.signature {
+    color: var(--color1);
+    font-family: 'yellowtail', cursive;
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
 }
 
 @media only screen and (min-width:768px) {
@@ -49,10 +66,19 @@
     }
 
     .about h2 {
-        font-family: 'Quintessential', cursive;
-        overflow-y: hidden;
-        font-weight: 900;
         font-size: 36px;
-        margin-bottom: 3rem;
+    }
+
+    .about-profile-txt p {
+        height: 320px;
+    }
+
+    .rtlp2 {
+        height: 300px !important;
+    }
+
+    .signature {
+        justify-content: start;
+        direction: rtl !important;
     }
 }

@@ -1,5 +1,5 @@
-import React, { useEffect, useState, startTransition } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import React, { useEffect, useState, useRef } from 'react';
+import { BrowserRouter, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 import Pages from './components/page/Pages'
@@ -10,6 +10,7 @@ function App() {
   const queryClient = new QueryClient();
 
   const [isLoading, setIsLoading] = useState(true);
+  const contentRef = useRef(null);
 
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -26,11 +27,18 @@ function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false); // Hide loading screen after 5 seconds
+      setIsLoading(false);
     }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    // When the component mounts and isLoading changes to false, add the class to the content area
+    if (!isLoading) {
+      contentRef.current.classList.add('fade-in');
+    }
+  }, [isLoading]);
 
   return (
     <>
@@ -39,7 +47,10 @@ function App() {
           {isLoading ? (<Loader />) : (
             <Layout>
               <ScrollToTop />
-              <Pages />
+              <div ref={contentRef} className="content-fade-in">
+                <Pages />
+              </div>
+
             </Layout>
           )}
         </BrowserRouter>

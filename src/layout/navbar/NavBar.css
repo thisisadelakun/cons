@@ -4,24 +4,21 @@
     top: 0;
     z-index: 100;
     left: 0;
-    font-family: 'Yellowtail', cursive;
 }
 
 .offcanvasbgr,
 .show-background {
-    background-color: #F9FAFA;
+    background-color: var(--color3);
 }
 
-.nav-container {
-    color: #1a1a1a;
-}
+
 
 .nav-link {
-    color: #949292;
+    color: var(--color2) !important;
 }
 
 .custom-close-button {
-    color: #000;
+    color: var(--color1);
     background-color: transparent;
     border: none;
     font-size: 28px;
@@ -29,11 +26,14 @@
 
 button .custom-close-button {
     border: none;
-
 }
 
 button .custom-close-button:hover {
     background: none !important;
+}
+
+.custom-close-button:hover {
+    background: transparent !important;
 }
 
 .mb-2 {
@@ -57,13 +57,8 @@ button .custom-close-button:hover {
     width: 43px;
     height: 41px;
     border: 2PX solid #01AEF2;
+    background-color: var(--color2);
     padding: 2px;
-}
-
-.red_logo {
-    position: relative;
-    left: -18px;
-    top: 10px;
 }
 
 li {

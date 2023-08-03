@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 
-import {GiTiedScroll} from 'react-icons/gi'
+import { GiTiedScroll } from 'react-icons/gi'
 
 import { tokenAbout, tokenInfo } from '../../models/db'
 
@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div className='about'>
             <div>
-                <h2 className='containers'>About <GiTiedScroll/></h2>
+                <h2 className='containers'>About <GiTiedScroll /></h2>
             </div>
             <div className="about-profile">
                 <div className="about-profile-img">
@@ -22,10 +22,10 @@ const About = () => {
 
             <div className="about-profile rtl">
                 <div className="about-profile-img">
-                    <img src={tokenInfo.warrior} alt="warrior" width={200} height={200}/>
+                    <img src={tokenInfo.warrior} alt="warrior" width={200} height={200} />
                 </div>
                 <div className="about-profile-txt">
-                    <p>{tokenAbout.pg2}</p>
+                    <p className='rtlp2'>{tokenAbout.pg2}<small className='signature'> <br />~..constitution/ERC..~</small></p>
                 </div>
             </div>
 

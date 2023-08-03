@@ -25,18 +25,15 @@ const Pages = () => {
                     </div>
                 </div>
 
-                <div className='paper1'>
-                    <div className="papercol">
-                    </div>
+                <div className="paper">
+                    <div className="papercol"></div>
                 </div>
             </header>
-
-
 
             <main>
                 <About />
                 <Airdrop />
-                <Roadmap/>
+                <Roadmap />
             </main>
 
             <footer></footer>

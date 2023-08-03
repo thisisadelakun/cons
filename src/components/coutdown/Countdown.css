@@ -1,6 +1,5 @@
 .countdown {
     position: relative;
-
 }
 
 .countdowncol {
@@ -18,8 +17,8 @@
 .countdowncol p {
     font-family: 'Dongle', sans-serif;
     font-size: 26px;
+    color: var(--color2);
 }
-
 
 .flipcard h2 {
     color: var(--color2);

@@ -21,14 +21,12 @@ const Roadmap = () => {
                     activeItemIndex={false}
                     hideControls={true}
                     theme={{
-                        cardBgColor: '#f9fafa', // Replace with your desired background color
-                        cardShadow: '0 2px 6px rgba(0, 0, 0, 0.2)',
+                        cardBgColor: '#FCC69C',
                         cardDetailsColor: 'rgba(0, 0, 0, 0.664)',
                         primary: '#00ADF1',
-                        titleColor: 'black',
+                        titleColor: '#f9faf9',
                         cardTitleColor: 'black',
                         cardSubtitleColor: 'rgba(0, 0, 0, 0.664)',
-                        detailsColor: "red"
                     }}
                 />
             </div>

@@ -68,7 +68,7 @@ const NavBar = () => {
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
               className="offcanvasbgr"
-              style={{ width: "100%" }}
+              style={{ width: "100%", backgroundColor: "#0D1117" }}
 
             >
               <Offcanvas.Header className="offcanvas-header">
