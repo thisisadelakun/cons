@@ -2,10 +2,15 @@ import React, { useState } from 'react'
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import './Airdrop.css'
 
+import { Link } from 'react-scroll';
+
 import { AiOutlinePieChart } from 'react-icons/ai'
 import { PiCopySimpleFill } from 'react-icons/pi'
-import { GiTiedScroll } from 'react-icons/gi'
+import { RiTokenSwapFill } from 'react-icons/ri'
 import { tokenInfo } from '../../models/db';
+
+import { FaLongArrowAltDown } from 'react-icons/fa';
+import { TiInputChecked } from 'react-icons/ti';
 
 const Airdrop = () => {
     const [isCopied, setIsCopied] = useState(false);
@@ -28,32 +33,57 @@ const Airdrop = () => {
         }
     };
 
+    const handleCopySaleAddress = () => {
+        const addressElement = document.getElementById('sale-address');
+        const range = document.createRange();
+        range.selectNode(addressElement);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        try {
+            document.execCommand('copy');
+            setIsCopied(true);
+            setTimeout(() => setIsCopied(false), 2000);
+        } catch (error) {
+            console.error('Unable to copy');
+        } finally {
+            window.getSelection().removeAllRanges();
+        }
+    };
+
     return (
-        <div className='airdrop'>
+        <div className='airdrop' id='airdrop'>
             <div className="hello containers">
-                <h2>Tokenomics <GiTiedScroll /></h2>
+                <h2>Tokenomics <RiTokenSwapFill /></h2>
                 <small>
                     The convergence between decentralized and traditional financial models is accelerating and we are here to power it.
                 </small>
 
                 <div className='hello-btn'>
-                    <button className='ctq'>
+                    <Link
+                        to='buytoken'
+                        smooth={true}
+                        duration={500}
+                        className='ctq'
+                    >
                         Buy Token
-                    </button>
+                    </Link>
 
-                    <button className='cta'>
-                        <span>Claim Airdrop</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
+                    <Link
+                        className='cta'
+                        to='
+                     airdrop-claim'
+                        smooth={true}
+                        duration={500}>
+                        Claim Portfolio <FaLongArrowAltDown className='svg' />
+                    </Link>
+
                 </div>
             </div>
 
             <div className="airdropmain containers">
                 <div className="airdrop-left">
-                    <img src={tokenInfo.logo} alt="$const" width={250} className='rounded-circle img-fluid' />
+                    <img src={tokenInfo.roundlogo} alt="$const" className='' />
                 </div>
 
                 <div className="airdrop-right">
@@ -161,6 +191,67 @@ const Airdrop = () => {
                         <ProgressBar
                             variant="secondary" now={3}
                             style={{ backgroundColor: '#000', border: "none" }} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="sales-page">
+                <div className="sales-col containers">
+                    <div className="buytoken" id="buytoken">
+                        <div className="buytoken-col">
+                            <div className="buy-header">
+                                <h2>
+                                    Token Presale
+                                </h2>
+                            </div>
+                            <div className="buy-main">
+                                <div className="sale-address-col">
+                                    <div className="sale-add-hd">
+                                        <img src={tokenInfo.roundlogo} alt="$const" width={150} />
+                                        <h5>$CONST Token</h5>
+
+                                    </div>
+                                    <p className='presalep'>
+                                        Pre-sale Address
+                                    </p>
+
+                                    <p id="sale-address">
+                                        0xE7dDdAba05Ccc3A6a982f52501C3fB2B0c38c9A8
+                                    </p>
+                                    <button
+                                        onClick={handleCopySaleAddress}>
+                                        Copy <PiCopySimpleFill />
+                                    </button>
+
+                                    <div className="prices">
+                                        <p><TiInputChecked className='prices-icon' />1 ETH = 5,000 $CONST</p>
+                                        <p><TiInputChecked className='prices-icon' />Min Buy: 0.01 ETH</p>
+                                        <p><TiInputChecked className='prices-icon' />Max Buy: 1 ETH</p>
+                                        <p><TiInputChecked className='prices-icon' />Listing Price: $2</p>
+                                        <p><TiInputChecked className='prices-icon' />$CONST Will List on 31st August, 2023 on UNISWAP and others Exchanges. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {isCopied && <div className="copy-alert">Address copied!</div>}
+                        </div>
+
+                    </div>
+
+                    <div className="airdrop-claim" id="airdrop-claim">
+                        <div className="buytoken-col">
+                            <div className="buy-header">
+                                <h2>Claim your Airdrop</h2>
+                            </div>
+
+                            <div className="buy-main">
+                                <div className="airdrop-col">
+                                    <div className="airdrop-col-hd">
+                                        <h5>Airdrop & Refferal</h5>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

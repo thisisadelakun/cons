@@ -3,6 +3,7 @@ import discord from '../assets/discord.svg';
 import twitter from '../assets/twitter.svg';
 import scrolls from '../assets/const-scroll.png'
 import warrior from '../assets/warrior.jpg'
+import roundlogo from '../assets/const-circle-logo.png'
 
 export const tokenInfo = {
     name: "ConstitutionERC",
@@ -10,6 +11,7 @@ export const tokenInfo = {
     tokenAcronym: "$CONST",
     tokenDescription: "We're building the best gamified meme communities on the internet",
     logo: logo,
+    roundlogo: roundlogo,
     discord: discord,
     twitter: twitter,
     scrolls: scrolls,

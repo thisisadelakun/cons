@@ -55,6 +55,17 @@
     font-size: 12px;
 }
 
+.download-whitepaper button {
+    color: var(--color2);
+    border-radius: 11px;
+    font-size: 21px;
+    line-height: 1;
+    font-family: "Dongle", sans-serif;
+    background: transparent;
+    border: 2px solid var(--color1);
+    width: fit-content;
+}
+
 @media only screen and (min-width:768px) {
     .about-profile {
         display: grid;
@@ -69,16 +80,31 @@
         font-size: 36px;
     }
 
+    .about-profile-txt {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .about-profile-txt p {
+        height: 650px;
+    }
+
+    .rtlp2 {
+        height: 550px !important;
+    }
+
+    .signature {
+        justify-content: start;
+        direction: rtl !important;
+    }
+}
+
+@media only screen and (min-width:1024px) {
     .about-profile-txt p {
         height: 320px;
     }
 
     .rtlp2 {
         height: 300px !important;
-    }
-
-    .signature {
-        justify-content: start;
-        direction: rtl !important;
     }
 }

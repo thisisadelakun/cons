@@ -68,6 +68,7 @@ li {
     font-weight: 500;
     position: relative;
     text-transform: lowercase;
+    cursor: pointer;
 }
 
 .nav-item-border::before,

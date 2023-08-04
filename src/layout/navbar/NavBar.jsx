@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './NavBar.css'
 
 import { tokenInfo, } from '../../models/db'
@@ -90,6 +90,9 @@ const NavBar = () => {
                       className="nav-link"
                       onClick={() => closeMenu()}
                       exact="true"
+                      to='about'
+                      smooth={true}
+                      duration={500}
                     >
                       About
                     </Link>
@@ -99,6 +102,9 @@ const NavBar = () => {
                       className="nav-link"
                       onClick={() => closeMenu()}
                       exact="true"
+                      to='airdrop'
+                      smooth={true}
+                      duration={500}
                     >
                       Token
                     </Link>
@@ -119,6 +125,9 @@ const NavBar = () => {
                       className="nav-link"
                       onClick={() => closeMenu()}
                       exact="true"
+                      to='roadmap'
+                      smooth={true}
+                      duration={500}
                     >
                       Road Map
 

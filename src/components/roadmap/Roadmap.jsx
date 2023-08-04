@@ -8,9 +8,9 @@ import { FaMapSigns } from 'react-icons/fa'
 const Roadmap = () => {
 
     return (
-        <div className='containers roadmap'>
+        <div className='roadmap' id='roadmap'>
             <div>
-                <h2 className='roadmaph2'>Roadmap <FaMapSigns /></h2>
+                <h2 className='roadmaph2 containers'>Roadmap <FaMapSigns /></h2>
             </div>
             <div className='custom-chrono' style={{ width: "100%", height: "100%" }}>
                 <Chrono

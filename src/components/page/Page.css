@@ -25,6 +25,12 @@
     color: var(--color1) !important;
 }
 
+.hello-btn-2{
+    margin-top: 2rem !important;
+    display: flex;
+    justify-content: center;
+}
+
 .paper1 {
     width: 100%;
 }
