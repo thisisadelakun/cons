@@ -52,7 +52,7 @@ const NavBar = () => {
             <Navbar.Brand>
               <div className='title-logo'>
                 <NavLink to="/">
-                  <img src={tokenInfo.logo} alt="ConstitutionERC logo" className='rounded-circle' />
+                  <img src={tokenInfo.roundlogo} alt="ConstitutionERC logo" className='rounded-circle' />
                 </NavLink>
               </div>
             </Navbar.Brand>
@@ -97,6 +97,7 @@ const NavBar = () => {
                       About
                     </Link>
                   </li>
+
                   <li className="nav-item nav-item-border">
                     <Link
                       className="nav-link"
@@ -107,16 +108,6 @@ const NavBar = () => {
                       duration={500}
                     >
                       Token
-                    </Link>
-                  </li>
-                  <li className="nav-item nav-item-border">
-                    <Link
-                      className="nav-link"
-                      onClick={() => closeMenu()}
-                      exact="true"
-                    >
-                      ICO Introduce
-
                     </Link>
                   </li>
 
@@ -142,6 +133,9 @@ const NavBar = () => {
                       className="nav-link"
                       onClick={() => closeMenu()}
                       exact="true"
+                      to='buytoken'
+                      smooth={true}
+                      duration={500}
                     >
                       PRESALE
                     </Link>

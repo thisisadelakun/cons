@@ -75,7 +75,7 @@ const Airdrop = () => {
                      airdrop-claim'
                         smooth={true}
                         duration={500}>
-                        Claim Portfolio <FaLongArrowAltDown className='svg' />
+                        Claim Airdrop <FaLongArrowAltDown className='svg' />
                     </Link>
 
                 </div>
@@ -207,7 +207,7 @@ const Airdrop = () => {
                             <div className="buy-main">
                                 <div className="sale-address-col">
                                     <div className="sale-add-hd">
-                                        <img src={tokenInfo.roundlogo} alt="$const" width={150} />
+                                        <img src={tokenInfo.logobw} alt="$const" width={150} />
                                         <h5>$CONST Token</h5>
 
                                     </div>
@@ -239,16 +239,17 @@ const Airdrop = () => {
 
                     <div className="airdrop-claim" id="airdrop-claim">
                         <div className="buytoken-col">
-                            <div className="buy-header">
-                                <h2>Claim your Airdrop</h2>
-                            </div>
-
                             <div className="buy-main">
                                 <div className="airdrop-col">
                                     <div className="airdrop-col-hd">
-                                        <h5>Airdrop & Refferal</h5>
+                                        <img src={tokenInfo.roundlogo} alt="$const" width={300} />
+                                        <h4>Airdrop</h4>
                                     </div>
-                                    
+
+                                    <div className="airdrop-main">
+                                        <li>Coming Soon...</li>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
