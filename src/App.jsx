@@ -34,7 +34,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // When the component mounts and isLoading changes to false, add the class to the content area
     if (!isLoading) {
       contentRef.current.classList.add('fade-in');
     }
